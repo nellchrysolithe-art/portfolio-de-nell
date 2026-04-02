@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Nell Chrysolithe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <h1 class="logo">Nell<span>.</span></h1>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section id="hero" class="hero container">
+    <div class="hero-content">
+      <h2>Salut, je suis <span class="accent">Nell Chrysolithe</span></h2>
+      <p>Étudiant en Génie Civil & passionné par l’innovation, la modélisation des structures, la recherche technologique.</p>
+      <a href="#projects" class="btn">Voir mes projets</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="WhatsApp Image 2025-11-26 à 17.32.41_8e92b871.jpg" alt="Photo de Nell" width="300" height="300"> 
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2>À propos</h2>
+    <p>
+      Je suis étudiant en génie civil au Gabon, passionné par la conception des structures, les matériaux innovants,
+      la modélisation 3D et la veille technologique. 
+    </p>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">AutoCAD</div>
+      <div class="skill-card">Robot Structural Analysis</div>
+      <div class="skill-card">Archicad</div>
+      <div class="skill-card">HTML/CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">MS Project</div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2>Projets</h2>
+
+    <div class="projects-grid">
+
+      <!-- PROJET 1 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="Capture d'écran 2025-11-26 182531.png" alt="Projet madame MBOUMBA" width="400" height="200"> 
+        </div>
+        <div class="project-body">
+          <h3>Réalisation plan architectural - projet Madame MBOUMBA</h3>
+          <p>
+            Réalisation du plan architectural de deux maisons et d'une boutique. 
+          </p>
+          <a href="projet1.html" class="btn-small">Voir plus</a>
+        </div>
+      </article>
+
+      <!-- PROJET 2 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="./PLAN TRIBUNE  - Image1.jpg" alt="Pose de conteneurs pour bureaux ">
+        </div>
+        <div class="project-body">
+          <h3>Projet de construction d'un plateau sportif </h3>
+          <p>
+            Réalisation des plans du plateau sportif d'une école primaire. 
+          </p>
+          <a href="projet2.html" class="btn-small">Voir plus</a>
+        </div>
+      </article>
+
+      <!-- PROJET 3 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="Projet soutenance façade avant.png" alt="Plan maison R+1">
+        </div>
+        <div class="project-body">
+          <h3>Réalisation des plans d'un R+1 </h3>
+          <p>
+            Réalisation du plan de fondation, plan de coffrage,plan de details... d'une maison à usage d'habitation.
+          </p>
+          <a href="projet3.html" class="btn-small">Voir plus</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter via :</p> 
+
+    <ul class="contact-list">
+      <li>Email : <a href="mailto:nell@example.com">nellchrysolithe@gmail.com</a></li>
+      <li>WhatsApp : <a href="#">+241 066 94 60 52 </a></li>
+      <li>Instagram : <a href="#">@nell Chrysolithe</a></li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 — Portfolio de Nell Chrysolithe</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<style>/* VARIABLES */
+:root{
+  --bg: #050a14;
+  --card: #101622;
+  --text: #e3e6eb;
+  --muted: #9da3af;
+  --accent: #1b62d6;
+}
+
+/* GLOBAL */
+body{
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section{
+  padding: 80px 0;
+}
+
+h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p{
+  color: var(--muted);
+}
+
+/* HEADER */
+.site-header{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(14px);
+  background: rgba(5,10,20,0.65);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 10;
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.logo span{ color: var(--accent); }
+
+.nav ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav a{
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a:hover{
+  color: var(--accent);
+}
+
+/* BURGER */
+.burger{ display: none; }
+
+/* HERO */
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.hero-content{
+  max-width: 550px;
+}
+
+.accent{
+  color: var(--accent);
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 25px;
+  background: var(--accent);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.avatar{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+}
+
+/* SKILLS */
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+  gap: 20px;
+}
+
+.skill-card{
+  background: var(--card);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* PROJECTS */
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 25px;
+}
+
+.project-card{
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.project-card:hover{
+  transform: translateY(-5px);
+}
+
+.project-media img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-body{
+  padding: 20px;
+}
+
+.btn-small{
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--accent);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact-list li{
+  margin: 6px 0;
+}
+
+/* FOOTER */
+.footer{
+  padding: 30px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media(max-width: 820px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image{
+    margin-top: 20px;
+  }
+
+  .nav{ display: none; }
+
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+</style>
